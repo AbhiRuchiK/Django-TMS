@@ -1,0 +1,12 @@
+{%  block content %}
+    <form method="POST">
+    {% csrf_token %}
+        {{ create_form.as_p }}
+        <input type="submit" value="Add" name="edit_task"/>
+        {{ comment_form.as_p }}
+        <input type="submit" value="Add" name="add_comment"/>
+        <a href="{% url 'comment_delete' task_object.id  %}">delete</a>
+        <br>
+        <a href="../../../../tasks">back</a>
+    </form>
+{% endblock %}

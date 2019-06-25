@@ -1,0 +1,16 @@
+*.xml
+.idea/*
+__pycache__/*
+*README.md
+task_management_system/__pycache__/*
+tasks/__pycache__/*
+tasks/migrations/__pycache__/*
+*task_management_system/__init__.py
+*tasks/__init__.py
+*tasks/migrations/__init__.py
+tasks/tests/task/__pycache__/*
+tasks/tests/__pycache__/*
+*accounts/__init__.py
+*accounts/migrations/__init__.py
+.asc/*
+.swp/*

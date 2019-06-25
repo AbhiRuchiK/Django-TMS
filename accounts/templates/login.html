@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>login</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit" name="login" />
+
+    <br><br>
+    </form>
+    <button onclick="window.location.href = '/accounts/register';">Create account</button>
+
+</body>
+</html>

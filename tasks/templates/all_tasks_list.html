@@ -1,0 +1,12 @@
+<style>
+a{text-decoration: none;}
+a:link {color:#000000;}    /* unvisited link is black*/
+a:visited {color:#000000;} /* visited link is black (reverse the color back to black)*/
+a:hover {color:#0000FF;}   /* mouse over link (blue when mouse over)*/
+a:active {color:#0000FF;}  /* selected link (blue in the split second which you loading the page.)*/
+</style>
+{% for task_object in all_tasks_objects %}
+    <li><a href="{% url 'task_edit' task_object.id %}">{{ task_object.task_title }} </a> - <a href="{% url 'task_delete' task_object.id %}">delete</a> </li>
+{% endfor %}
+<br>
+<button onclick="window.location.href = '/home';">back</button>

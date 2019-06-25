@@ -1,0 +1,8 @@
+{%  block content %}
+    <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Add"/>
+    <button name="cancel" onclick="window.location.href = 'home/';">Cancel</button>
+    </form>
+{% endblock %}
